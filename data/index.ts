@@ -28,9 +28,9 @@ export const gridItems = [
   // },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-3 md:col-span-3 md:row-span-2 lg:min-h-[45vh]",
+    title: "Relevant",
+    description: "Courses",
+    className: "lg:col-span-3 md:col-span-3 md:row-span-2 lg:min-h-[45vh] sm:row-span-3",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
