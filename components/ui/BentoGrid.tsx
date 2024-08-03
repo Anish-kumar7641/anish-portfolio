@@ -44,9 +44,12 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["Data Structure","AI","Machine Learning"];
+  const leftLists = ["Data Structure", "AI", "Machine Learning"];
   const rightLists = ["Computer Networks", "Operating System", "DBMS"];
   const rightListss = ["OOPs", "Deep Learning", "Computer Architecture"];
+  const languageLists = ["C", "C++", "Python","JavaScript"];
+  const languageLists2 = ["MySQL", "HTML", "CSS","JSON"];
+
 
   const defaultOptions = {
     animationData: animationData,
@@ -117,15 +120,48 @@ export const BentoGridItem = ({
               </svg>
             </div>
           )}
+          {id == 4 && (
+            <div className="flex justify-start space-x-6 sm:-ml -6  mt-2">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="0"
+                viewBox="0 0 384 512"
+                height="50"
+                width="50"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ color: "rgb(255, 120, 36)" }}
+              >
+                <path d="M149.9 349.1l-.2-.2-32.8-28.9 32.8-28.9c3.6-3.2 4-8.8.8-12.4l-.2-.2-17.4-18.6c-3.4-3.6-9-3.7-12.4-.4l-57.7 54.1c-3.7 3.5-3.7 9.4 0 12.8l57.7 54.1c1.6 1.5 3.8 2.4 6 2.4 2.4 0 4.8-1 6.4-2.8l17.4-18.6c3.3-3.5 3.1-9.1-.4-12.4zm220-251.2L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM256 51.9l76.1 76.1H256zM336 464H48V48h160v104c0 13.3 10.7 24 24 24h104zM209.6 214c-4.7-1.4-9.5 1.3-10.9 6L144 408.1c-1.4 4.7 1.3 9.6 6 10.9l24.4 7.1c4.7 1.4 9.6-1.4 10.9-6L240 231.9c1.4-4.7-1.3-9.6-6-10.9zm24.5 76.9l.2.2 32.8 28.9-32.8 28.9c-3.6 3.2-4 8.8-.8 12.4l.2.2 17.4 18.6c3.3 3.5 8.9 3.7 12.4.4l57.7-54.1c3.7-3.5 3.7-9.4 0-12.8l-57.7-54.1c-3.5-3.3-9.1-3.2-12.4.4l-17.4 18.6c-3.3 3.5-3.1 9.1.4 12.4z"></path>
+              </svg>
+            </div>
+          )}
+          {id == 5 && (
+            <div className="flex justify-start space-x-6 sm:-ml -6  mt-2">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="0"
+                viewBox="0 0 384 512"
+                height="50"
+                width="50"
+                xmlns="http://www.w3.org/2000/svg"
+                style={{ color: "rgb(255, 120, 36)" }}
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path><path d="M7 5h10v2h2V3c0-1.1-.9-1.99-2-1.99L7 1c-1.1 0-2 .9-2 2v4h2V5zm8.41 11.59L20 12l-4.59-4.59L14 8.83 17.17 12 14 15.17l1.41 1.42zM10 15.17 6.83 12 10 8.83 8.59 7.41 4 12l4.59 4.59L10 15.17zM17 19H7v-2H5v4c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-4h-2v2z"></path>
+              </svg>
+            </div>
+          )}
+          
           <div
             className={`font-sans md:text-xs  lg:text-3xl text-sm  max-w-90 font-bold z-10`}
           >
             {title}
           </div>
-          <div className="font-sans font-bold md:max-w-32 md:text-xs  lg:text-3xl text-sm z-10">
+          <div className="font-sans font-light md:max-w-32 md:text-xs  lg:text-3xl text-sm z-10">
             {description}
           </div>
-          
+
           {id === 1 && (
             <div className="absolute z-20 top-0 left-0 right-0 text-center p-4 lg:top-12 md:top-8 ">
               <ContactSection />
@@ -140,7 +176,7 @@ export const BentoGridItem = ({
             </div>
 
           )}
-          
+
           {id === 3 && (
             <div className="flex  gap-1 lg:gap-5 w-9/12 absolute right-3 lg:-right-5 ">
               <div className="flex flex-col gap-1 md:gap-1 lg:gap-8">
@@ -180,6 +216,40 @@ export const BentoGridItem = ({
 
             </div>
           )}
+
+
+          {id === 4 && (
+            <div className="flex flex-col gap-1 lg:gap-5 w-9/13 absolute right-3  ">
+              <div className="flex flex-row gap-1 md:gap-1 lg:gap-6">
+                {languageLists.map((item, i) => (
+                  <span
+                    key={i}
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="lg:py-4 lg:px-10 py-1 px-1  rounded-lg text-center bg-[#10132E]"></span>
+              </div>
+              <div className="flex flex-row gap-1 md:gap-1 lg:gap-5">
+              <span className="lg:py-4 lg:px-8 py-1 px-1  rounded-lg text-center bg-[#10132E]"></span>
+                {languageLists2.map((item, i) => (
+                  <span
+                    key={i}
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                
+              </div>
+              
+              
+
+            </div>
+          )}
+
+
         </div>
       </div>
     </div>
