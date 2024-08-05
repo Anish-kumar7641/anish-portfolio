@@ -45,8 +45,8 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["Data Structure", "AI", "Machine Learning"];
-  const rightLists = ["Computer Networks", "Operating System", "DBMS"];
-  const rightListss = ["OOPs", "Deep Learning", "Computer Architecture"];
+  const rightListss = ["Computer Networks", "Operating System", "DBMS"];
+  const rightLists = ["OOPs", "Deep Learning", "Computer Vision"];
   const languageLists = ["C", "C++", "Python","JavaScript"];
   const languageLists2 = ["MySQL", "HTML", "CSS","JSON"];
 
